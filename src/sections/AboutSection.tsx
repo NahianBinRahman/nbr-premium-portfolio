@@ -106,7 +106,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ profile, metrics }) 
                 <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
                 <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
                 <span className="ml-2 text-xs font-mono-code text-slate-400">
-                  nahian@antigravity-core:~
+                  nahian@deeptech-core:~
                 </span>
               </div>
               <span className="text-[10px] font-mono-code text-cyber-cyan/80 uppercase">

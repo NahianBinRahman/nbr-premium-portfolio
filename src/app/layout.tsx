@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://github.com/NahianBinRahman",
-    title: "Nahian Bin Rahman | Antigravity Developer Experience",
+    title: "Nahian Bin Rahman | AI Engineer & Full-Stack Developer",
     description:
       "Futuristic AI Engineer Command Center & Portfolio for Nahian Bin Rahman.",
     siteName: "Nahian Bin Rahman Portfolio",

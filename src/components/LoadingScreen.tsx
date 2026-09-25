@@ -12,7 +12,7 @@ const BOOT_STEPS = [
   "Mounting Quantum Core System...",
   "Calibrating Neural Synapses...",
   "Decrypting GitHub Telemetry [NahianBinRahman]...",
-  "Configuring Antigravity Developer HUD...",
+  "Configuring Neural Telemetry HUD...",
   "Universe Initialized. Access Granted.",
 ];
 
