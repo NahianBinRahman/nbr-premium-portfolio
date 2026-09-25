@@ -177,13 +177,14 @@ export const ServicesSection: React.FC = () => {
               <span>CORE CAPABILITIES // SELECT TO EXPAND</span>
             </p>
 
-            {DEEPTECH_SERVICES.map((service) => {
+            {DEEPTECH_SERVICES.map((service, sIndex) => {
               const Icon = service.icon;
               const isSelected = selectedService === service.id;
 
               return (
                 <button
                   key={service.id}
+                  onMouseEnter={() => soundFx.playCardHover(sIndex * 35)}
                   onClick={() => {
                     soundFx.playBlip(750, 0.03);
                     setSelectedService(service.id);
@@ -383,10 +384,11 @@ export const ServicesSection: React.FC = () => {
                 name: "Launch & Ongoing Scale",
                 desc: "Deploying to production on edge infrastructure with zero downtime and continuous telemetry monitoring.",
               },
-            ].map((st) => (
+            ].map((st, stIdx) => (
               <div
                 key={st.step}
-                className="p-4 rounded-xl bg-space-850/80 border border-white/5 flex flex-col justify-between"
+                onMouseEnter={() => soundFx.playCardHover(stIdx * 40)}
+                className="p-4 rounded-xl bg-space-850/80 border border-white/5 hover:border-cyber-cyan/30 transition-all flex flex-col justify-between"
               >
                 <div>
                   <span className="font-mono-code text-lg font-black text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-cyber-emerald">

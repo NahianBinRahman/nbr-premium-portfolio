@@ -164,7 +164,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ profile, metrics }) 
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="p-6 rounded-2xl bg-space-850/70 border border-white/10 backdrop-blur-md hover:border-cyber-cyan/40 transition-all">
+            <div
+              className="p-6 rounded-2xl bg-space-850/70 border border-white/10 backdrop-blur-md hover:border-cyber-cyan/40 transition-all cursor-pointer"
+              onMouseEnter={() => soundFx.playCardHover(50)}
+            >
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 rounded-lg bg-cyber-cyan/10 text-cyber-cyan border border-cyber-cyan/20">
                   <Cpu className="w-5 h-5" />
@@ -180,7 +183,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ profile, metrics }) 
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-space-850/70 border border-white/10 backdrop-blur-md hover:border-cyber-violet/40 transition-all">
+            <div
+              className="p-6 rounded-2xl bg-space-850/70 border border-white/10 backdrop-blur-md hover:border-cyber-violet/40 transition-all cursor-pointer"
+              onMouseEnter={() => soundFx.playCardHover(100)}
+            >
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 rounded-lg bg-cyber-violet/10 text-cyber-violet border border-cyber-violet/20">
                   <Layers className="w-5 h-5" />
@@ -196,7 +202,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ profile, metrics }) 
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-space-850/70 border border-white/10 backdrop-blur-md hover:border-cyber-emerald/40 transition-all">
+            <div
+              className="p-6 rounded-2xl bg-space-850/70 border border-white/10 backdrop-blur-md hover:border-cyber-emerald/40 transition-all cursor-pointer"
+              onMouseEnter={() => soundFx.playCardHover(150)}
+            >
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 rounded-lg bg-cyber-emerald/10 text-cyber-emerald border border-cyber-emerald/20">
                   <Sparkles className="w-5 h-5" />
@@ -225,7 +234,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ profile, metrics }) 
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                onMouseEnter={() => soundFx.playBlip(600 + i * 100, 0.03)}
+                onMouseEnter={() => soundFx.playCardHover(i * 60)}
               >
                 <div
                   className="absolute -right-6 -bottom-6 w-24 h-24 rounded-full pointer-events-none opacity-20 blur-xl transition-all group-hover:opacity-40"

@@ -215,6 +215,7 @@ export const ArticlesSection: React.FC = () => {
                 return (
                   <button
                     key={tag}
+                    onMouseEnter={() => soundFx.playBlip(780, 0.04)}
                     onClick={() => {
                       soundFx.playBlip(780, 0.03);
                       setSelectedTag(tag);
@@ -355,7 +356,7 @@ export const ArticlesSection: React.FC = () => {
                 <article
                   key={article.id}
                   className="group rounded-2xl bg-space-850/80 border border-white/10 hover:border-cyber-cyan/50 backdrop-blur-xl p-3.5 sm:p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:shadow-[0_8px_25px_rgba(0,0,0,0.6),0_0_15px_rgba(0,229,255,0.12)] hover:-translate-y-0.5"
-                  onMouseEnter={() => soundFx.playBlip(700 + idx * 40, 0.015)}
+                  onMouseEnter={() => soundFx.playCardHover(idx * 35)}
                 >
                   {/* Card Glow Highlight */}
                   <div className="absolute top-0 right-0 w-24 h-24 bg-cyber-cyan/5 blur-xl rounded-full pointer-events-none group-hover:bg-cyber-cyan/15 transition-all" />

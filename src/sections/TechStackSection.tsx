@@ -160,7 +160,7 @@ export const TechStackSection: React.FC = () => {
                     <div
                       key={skill.name}
                       onMouseEnter={() => {
-                        soundFx.playBlip(900, 0.02);
+                        soundFx.playCardHover(120);
                         setHoveredSkill(skill.name);
                       }}
                       onMouseLeave={() => setHoveredSkill(null)}

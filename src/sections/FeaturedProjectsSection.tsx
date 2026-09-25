@@ -147,6 +147,7 @@ export const FeaturedProjectsSection: React.FC = () => {
                 return (
                   <button
                     key={cat}
+                    onMouseEnter={() => soundFx.playBlip(750, 0.04)}
                     onClick={() => {
                       soundFx.playBlip(750, 0.03);
                       setFilter(cat);
@@ -292,7 +293,7 @@ export const FeaturedProjectsSection: React.FC = () => {
                   <div
                     key={study.id}
                     className="group rounded-2xl bg-space-850/80 border border-white/10 hover:border-cyber-emerald/50 backdrop-blur-xl p-4 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:shadow-[0_8px_25px_rgba(0,0,0,0.6),0_0_15px_rgba(0,255,156,0.12)] hover:-translate-y-0.5"
-                    onMouseEnter={() => soundFx.playBlip(680 + idx * 30, 0.015)}
+                    onMouseEnter={() => soundFx.playCardHover(idx * 30)}
                   >
                     {/* Subtle hover gradient */}
                     <div

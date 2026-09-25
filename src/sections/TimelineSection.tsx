@@ -48,7 +48,7 @@ export const TimelineSection: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  onMouseEnter={() => soundFx.playBlip(700 + index * 80, 0.02)}
+                  onMouseEnter={() => soundFx.playCardHover(index * 60)}
                 >
                   {/* Glowing Node in Center */}
                   <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 top-1.5 z-20 flex items-center justify-center">
